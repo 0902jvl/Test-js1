@@ -11,8 +11,8 @@
 // confirm('Вам есть 18 лет?')
 
 let answers = [];
-answers[0] = prompt('Как ваше имя?', '');
-answers[1] = prompt('Какая ваша фамиля?', '');
-answers[2] = prompt('Сколько вам лет?', '');
+answers[0] = prompt("Как ваше имя?", "");
+answers[1] = prompt("Какая ваша фамиля?", "");
+answers[2] = prompt("Сколько вам лет?", "");
 
 document.write(answers);
