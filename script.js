@@ -84,7 +84,7 @@ first: for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
         console.log(`       second level: ${j}`);
         for (let k = 0; k < 7; k++) {
-            if (k === 6) break first;
+            if (k === 6) continue first;
             console.log(`                therd level: ${k}`);
         }
     }
@@ -110,12 +110,12 @@ for (let i = 2; i < 11; i += 2) {
 let i = 2;
 while (i <= 16) {
     if (i % 2 === 0) {
-        i++
+        i++;
         continue;
     } else {
         console.log(i);
     }
-    i++
+    i++;
 }
 //                                      Место для пятой задачи
 const arrayOfNumbers = [];
@@ -146,11 +146,31 @@ for (let i = 0; i < data.length; i++) {
 console.log(data);
 
 //3
-const data2 = [5, 10, "Shopping", 20, "Homework"];
-const result2 = [];
-for (let i = 1; i < data2.length; i++) {
-    result2[i - 1] = data[data2.length - i];
+const dat = [5, 10, "Shopping", 20, "Homework"];
+const res = [];
+for (let i = 1; i <= dat.length; i++) {
+    res[i - 1] = dat[dat.length - i];
 }
-console.log(result2);
+console.log(res);
 
+
+
+//elka
+elkaTask();
+
+function elkaTask() {
+    const lines = 5;
+    let result = "";
+
+    for (let i = 0; i <= lines; i++) {
+        for (let j = 0; j < lines - i; j++) {
+            result += " ";
+        }
+        for (let j = 0; j < 2 * i + 1; j++) {
+            result += "*";
+        }
+        result += "\n";
+    }
+    console.log(result);
+}
 
